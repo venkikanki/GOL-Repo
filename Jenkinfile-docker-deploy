@@ -63,7 +63,7 @@ stages {
       steps {
         sh label: '', script: '''sudo docker build -t gameoflife-image:$BUILD_NUMBER .
                                  sudo docker tag gameoflife-image:$BUILD_NUMBER docker.io/0480/gameoflife-image:$BUILD_NUMBER
-                                 sudo docker push docker.io/raknas000/gameoflife-image:$BUILD_NUMBER'''
+                                 sudo docker push docker.io/0480/gameoflife-image:$BUILD_NUMBER'''
                                  
       }
  }
